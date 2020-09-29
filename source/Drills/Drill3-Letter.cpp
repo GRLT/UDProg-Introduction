@@ -1,36 +1,36 @@
-#include "std_lib_facilities.h"
+#include "../std_lib_facilities.h"
 
 int main()
 {
     string FirstName = "";
-    string friend_name = "";
-    char friend_sex = 0;
-    double age = 0;
+    string Friend_Name = "";
+    char Friend_Sex = 0;
+    double Age = 0;
     int AgeOfFriend = 0;
 
     cout << "Enter the name of the person you want to write to" << endl;
     cin >> FirstName;
-    cout << "Dear " << FirstName << "," << friend_name << endl;
+    cout << "Dear " << FirstName << "," << Friend_Name << endl;
     cout << "How are you?" << endl
          << "I am fine." << endl
          << "I miss you" << endl
-         << "A few words" << endl;
+         << "How's things?" << endl;
     cout << "Name another friend!" << endl;
 
-    cin >> friend_name;
-    cout << "Have you seen " << friend_name << " lately?" << endl;
+    cin >> Friend_Name;
+    cout << "Have you seen " << Friend_Name << " lately?" << endl;
     cout << "Please enter your friend gender(m or f)" << endl;
-    cin >> friend_sex;
-    if (friend_sex == 'm')
+    cin >> Friend_Sex;
+    if (Friend_Sex == 'm')
     {
-        cout << "If you see " << friend_name << " please ask him to call me" << endl;
+        cout << "If you see " << Friend_Name << " please ask him to call me" << endl;
     }
-    else if (friend_sex == 'f')
+    else if (Friend_Sex == 'f')
     {
-        cout << "If you see " << friend_name << " please ask her to call me." << endl;
+        cout << "If you see " << Friend_Name << " please ask her to call me." << endl;
     }
 
-    cout << "Please enter your age!" << endl;
+    cout << "Please enter the age of your friend!" << endl;
     cin >> AgeOfFriend;
     if (AgeOfFriend >= 110 || AgeOfFriend <= 0)
     {
